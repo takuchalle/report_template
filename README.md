@@ -1,2 +1,4 @@
-# report_template
-report_template 
+# Template for Report
+
+Template creating report(.pdf) from Markdown.
+
