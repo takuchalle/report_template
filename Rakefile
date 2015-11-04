@@ -4,7 +4,7 @@
 require 'rake/clean'
 
 REPORT_FILE = "report.pdf"
-MD_FILES = FileList["*.md"].exclude("README.md")
+MD_FILES = FileList["src/*.md"].exclude("README.md")
 TEX_FILES = MD_FILES.ext(".tex")
 
 CLEAN.include(TEX_FILES)
