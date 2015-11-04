@@ -7,8 +7,9 @@ REPORT_FILE = "report.pdf"
 MD_FILES = FileList["src/*.md"].exclude("README.md")
 TEX_FILES = MD_FILES.ext(".tex")
 
+CLOBBER.include("*.pdf")
 CLEAN.include(TEX_FILES)
-CLEAN.include("*.pdf", "*.dvi", "*.log", "*.aux")
+CLEAN.include("*.dvi", "*.log", "*.aux")
 
 task :default => [:dvi2pdf]
   
