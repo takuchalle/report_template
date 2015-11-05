@@ -31,7 +31,7 @@ task :png2eps => EPS_FILES
 
 # *.md -> *.tex 変換ルール
 rule ".tex" => ".md" do |t|
-  sh "pandoc", "-o", t.name, t.source
+  sh "pandoc", "-t", "latex", "-o", t.name, t.source
 end
 
 # *.png -> *.eps 変換ルール
