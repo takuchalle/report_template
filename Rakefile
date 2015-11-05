@@ -4,7 +4,7 @@
 require 'rake/clean'
 
 REPORT_FILE = "report.pdf"
-MD_FILES = FileList["src/*.md"].exclude("README.md")
+MD_FILES = FileList["src/*.md"]
 TEX_FILES = MD_FILES.ext(".tex")
 PNG_FILES = FileList["img/*.png"]
 EPS_FILES = PNG_FILES.ext(".eps")
